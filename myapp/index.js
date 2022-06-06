@@ -31,7 +31,7 @@ app.get("/books/", async (request, response) => {
         * 
         FROM 
         book
-        ORDER_BY 
+        ORDER BY 
         book_id;`;
   let responseResultArray = await db.all(searchquery);
   response.send(responseResultArray);
